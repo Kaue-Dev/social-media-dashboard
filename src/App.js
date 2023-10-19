@@ -11,7 +11,7 @@ function App() {
     <div className="App bg-darkBg text-white">
       <Header />
       
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 flex-wrap">
         <SquareCard 
           iconSrc={facebookIcon}
           socialUsername="@kauesim"

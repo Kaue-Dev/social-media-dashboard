@@ -6,8 +6,8 @@ const Header = () => {
   const totalFollowers = 23004;
 
   return (
-    <header className="flex justify-around items-center pt-8 pb-32 bg-topDarkBg rounded-b-2xl relative">
-      <div>
+    <header className="flex justify-between items-center px-40 py-16 rounded-b-2xl">
+      <div className="flex flex-col gap-2">
         <PrimaryText 
           textContent="Social Media Dashboard" 
           fontSize="text-3xl" 

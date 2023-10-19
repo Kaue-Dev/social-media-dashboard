@@ -12,12 +12,12 @@ const SquareCard = ({ followersQuantity, socialUsername, todayEarnings, iconSrc,
         <img src={iconSrc} alt="SocialMediaIcon" width={24} />
         <SecondaryText textContent={socialUsername} />
       </div>
-      <div>
+      <div className='flex flex-col gap-2'>
         <PrimaryText 
           textContent={followersQuantity}
           fontSize="text-7xl"
         />
-        <p>FOLLOWERS</p>
+        <p className='text-blueDarkText text-sm tracking-widest font-light italic'>FOLLOWERS</p>
       </div>
       <div className='flex items-center gap-2 font-bold'>
         <img src={negative ? negativeArrow : positiveArrow} alt="ArrowIcon" width={10} />
