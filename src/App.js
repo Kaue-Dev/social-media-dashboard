@@ -5,6 +5,7 @@ import facebookIcon from "./images/icon-facebook.svg"
 import twitterIcon from "./images/icon-twitter.svg"
 import instagramIcon from "./images/icon-instagram.svg"
 import youtubeIcon from "./images/icon-youtube.svg"
+import RetangularCard from "./components/RetangularCard";
 
 function App() {
   return (
@@ -40,6 +41,13 @@ function App() {
           todayEarnings={144}
           borderColor="border-4 border-x-darkBg border-y-darkBg border-t-youtube"
           negative={true}
+        />
+      </div>
+
+      <div className="flex">
+        <RetangularCard 
+          iconSrc={facebookIcon}
+          likesNumber={87}
         />
       </div>
     </div>

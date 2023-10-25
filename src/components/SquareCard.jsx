@@ -7,7 +7,7 @@ import negativeArrow from "../images/icon-down.svg"
 
 const SquareCard = ({ followersQuantity, socialUsername, todayEarnings, iconSrc, borderColor, negative=false }) => {
   return (
-    <div className={`bg-cardDarkBg flex flex-col gap-10 text-center justify-center items-center w-72 h-72 rounded-lg ${borderColor}`}>
+    <div className={`cursor-pointer bg-cardDarkBg flex flex-col gap-10 text-center justify-center items-center w-72 h-72 rounded-lg ${borderColor}`}>
       <div className='flex gap-2 justify-center items-center'>
         <img src={iconSrc} alt="SocialMediaIcon" width={24} />
         <SecondaryText textContent={socialUsername} />
