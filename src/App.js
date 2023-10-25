@@ -6,10 +6,11 @@ import twitterIcon from "./images/icon-twitter.svg"
 import instagramIcon from "./images/icon-instagram.svg"
 import youtubeIcon from "./images/icon-youtube.svg"
 import RetangularCard from "./components/RetangularCard";
+import PrimaryText from "./components/PrimaryText";
 
 function App() {
   return (
-    <div className="App bg-darkBg text-white">
+    <div className="App bg-darkBg text-white flex flex-col gap-3">
       <Header />
       
       <div className="flex justify-center gap-4 flex-wrap">
@@ -43,11 +44,36 @@ function App() {
           negative={true}
         />
       </div>
+      
+      <div className="px-40 py-4">
+        <PrimaryText 
+          fontSize="text-3xl"
+          textContent="Overview - Today"
+        />
+      </div>
 
-      <div className="flex">
+      <div className="flex justify-center gap-4 flex-wrap">
         <RetangularCard 
           iconSrc={facebookIcon}
           likesNumber={87}
+          todayEarnings="3%"
+        />
+        <RetangularCard 
+          iconSrc={twitterIcon}
+          likesNumber={87}
+          todayEarnings="2%"
+          negative={true}
+        />
+        <RetangularCard 
+          iconSrc={instagramIcon}
+          likesNumber={87}
+          todayEarnings="2257%"
+        />
+        <RetangularCard 
+          iconSrc={youtubeIcon}
+          likesNumber={87}
+          todayEarnings="19%"
+          negative={true}
         />
       </div>
     </div>
